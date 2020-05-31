@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ordenar Selector</title>
+	<SCRIPT LANGUAGE="JavaScript" type="text/javascript" src="OrdenarSelector.js"></script>
+</head>
+<body>
+   
+<form method="GET" action="" name="form">
+<table>
+	<tr>
+	 <td align="middle">
+	 <select name="list" size="4">
+		<option value="1">item-A</option>
+		<option value="2">item-B</option>
+		<option value="3">item-C</option>
+		<option value="4">item-D</option>
+	 </select><br><br>
+	 <input type="button" value="submit" onClick="submitForm()">
+	 </td>
+	<td valign="top">
+		<input type="button" value="↑" onClick="mover(this.form.list.selectedIndex,-1)"><br><br>
+		<input type="button" value="↓" onClick="mover(this.form.list.selectedIndex,+1)">
+	</td>
+	</tr>
+</table>
+</form>
+
+</body>
+</html>
